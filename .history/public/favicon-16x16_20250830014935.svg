@@ -1,0 +1,29 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgGradient" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0a0f;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="sGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0066cc;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff3742;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="0.5"/>
+    </filter>
+  </defs>
+  
+  <rect width="16" height="16" rx="3" fill="url(#bgGradient)"/>
+  
+  <!-- Simplified "S" -->
+  <path d="M 2.5 4.5 C 2.5 3.5, 3.5 3, 4.5 3 C 5.5 3, 6 3.5, 6 4 C 6 4.5, 5.5 4.8, 5 5 L 4 5.2 C 3.5 5.3, 3 5.8, 3 6.5 C 3 7.2, 3.8 7.5, 4.5 7.5 C 5.2 7.5, 5.8 7.2, 5.8 6.5" 
+        fill="url(#sGradient)" filter="url(#glow)"/>
+  
+  <!-- Simplified "B" -->
+  <path d="M 8.5 3 L 8.5 10.5 L 11 10.5 C 11.8 10.5, 12.5 10, 12.5 9 C 12.5 8.5, 12 8.2, 11.5 8.2 L 8.5 8.2 L 8.5 7.2 L 11 7.2 C 11.5 7.2, 12 6.8, 12 6 C 12 5.2, 11.5 4.8, 11 4.8 L 8.5 4.8" 
+        fill="url(#bGradient)" filter="url(#glow)"/>
+</svg>
