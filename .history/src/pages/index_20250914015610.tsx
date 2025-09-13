@@ -701,12 +701,12 @@ export default function Home() {
           data-scroll-section
           className="relative mt-0 pt-8 sm:pt-20 xl:pt-0 xl:mt-0 mx-auto flex w-full max-w-7xl flex-col items-center xl:min-h-screen xl:flex-row xl:justify-between px-4 sm:px-6 lg:px-8 min-h-screen sm:min-h-0"
         >
-          <div className={cn(styles.intro, "flex flex-col justify-center")}>
+          <div className={styles.intro}>
             <div
               data-scroll
               data-scroll-direction="horizontal"
               data-scroll-speed=".09"
-              className="flex flex-row items-center space-x-1.5 mb-6"
+              className="flex flex-row items-center space-x-1.5"
             >
               <motion.span
                 initial={{ opacity: 0, scale: 0, y: 20 }}

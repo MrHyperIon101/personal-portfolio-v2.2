@@ -42,12 +42,12 @@ import {
 import MobilePerformanceMonitor from "@/components/MobilePerformanceMonitor";
 
 const aboutStats = [
-  { label: "Technologies mastered", value: "20+" },
+  { label: "Technologies mastered", value: "15+" },
   { label: "Years Learning", value: "3+" },
-  { label: "Active Projects", value: "10+" },
-  { label: "Certifications Earned", value: "20+" },
-  { label: "Community Memberships", value: "10+" },
-  { label: "Learners Mentored", value: "500+" },
+  { label: "Active Projects", value: "7+" },
+  { label: "Certifications Earned", value: "16+" },
+  { label: "Community Memberships", value: "7+" },
+  { label: "Years Experience", value: "1+" },
 ];
 
 const experiences = [
@@ -699,14 +699,14 @@ export default function Home() {
         <section
           id="home"
           data-scroll-section
-          className="relative mt-0 pt-8 sm:pt-20 xl:pt-0 xl:mt-0 mx-auto flex w-full max-w-7xl flex-col items-center xl:min-h-screen xl:flex-row xl:justify-between px-4 sm:px-6 lg:px-8 min-h-screen sm:min-h-0"
+          className="relative mt-0 pt-8 sm:pt-20 xl:pt-0 xl:mt-0 mx-auto flex w-full max-w-7xl flex-col items-center xl:min-h-screen xl:flex-row xl:justify-between px-4 sm:px-6 lg:px-8"
         >
-          <div className={cn(styles.intro, "flex flex-col justify-center")}>
+          <div className={styles.intro}>
             <div
               data-scroll
               data-scroll-direction="horizontal"
               data-scroll-speed=".09"
-              className="flex flex-row items-center space-x-1.5 mb-6"
+              className="flex flex-row items-center space-x-1.5"
             >
               <motion.span
                 initial={{ opacity: 0, scale: 0, y: 20 }}
@@ -848,11 +848,11 @@ export default function Home() {
                 data-scroll-speed=".06"
                 data-scroll-direction="horizontal"
               >
-                <span className="text-4xl sm:text-5xl tracking-tighter text-foreground xl:text-5xl 2xl:text-6xl">
+                <span className="text-4xl tracking-tighter text-foreground xl:text-5xl 2xl:text-6xl">
                   Hello, I&apos;m
                   <br />
                 </span>
-                <span className="clash-grotesk text-gradient text-4xl sm:text-5xl xl:text-5xl 2xl:text-6xl">
+                <span className="clash-grotesk text-gradient text-4xl xl:text-5xl 2xl:text-6xl">
                   Souvik Bagchi.
                 </span>
               </h1>
@@ -916,70 +916,6 @@ export default function Home() {
                 <Spline scene="/assets/scene.splinecode" />
               </Suspense>
             </div>
-          )}
-          
-          {/* Mobile-specific content to replace vector art space */}
-          {isMobile && (
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8, duration: 0.6 }}
-              className="mt-8 w-full"
-            >
-              {/* Quick Stats for Mobile */}
-              <div className="grid grid-cols-2 gap-4 mb-6">
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 0.9, duration: 0.4 }}
-                  className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg p-4 text-center"
-                >
-                  <div className="text-lg font-bold text-gradient">500+</div>
-                  <div className="text-xs text-muted-foreground">Learners Mentored</div>
-                </motion.div>
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 1.0, duration: 0.4 }}
-                  className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg p-4 text-center"
-                >
-                  <div className="text-lg font-bold text-gradient">10+</div>
-                  <div className="text-xs text-muted-foreground">Communities</div>
-                </motion.div>
-              </div>
-              
-              {/* Featured Roles */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1.1, duration: 0.5 }}
-                className="space-y-3"
-              >
-                <div className="flex items-center space-x-3 bg-card/30 backdrop-blur-sm border border-border/30 rounded-lg p-3">
-                  <div className="w-2 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
-                  <div>
-                    <div className="text-sm font-medium text-foreground">Google Campus Ambassador</div>
-                    <div className="text-xs text-muted-foreground">Official Google Representative</div>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-3 bg-card/30 backdrop-blur-sm border border-border/30 rounded-lg p-3">
-                  <div className="w-2 h-2 bg-gradient-to-r from-green-500 to-blue-500 rounded-full"></div>
-                  <div>
-                    <div className="text-sm font-medium text-foreground">Google Cloud Innovator</div>
-                    <div className="text-xs text-muted-foreground">Cloud Technology Expert</div>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-3 bg-card/30 backdrop-blur-sm border border-border/30 rounded-lg p-3">
-                  <div className="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>
-                  <div>
-                    <div className="text-sm font-medium text-foreground">Kotlin Community Member</div>
-                    <div className="text-xs text-muted-foreground">Active Developer Advocate</div>
-                  </div>
-                </div>
-              </motion.div>
-            </motion.div>
           )}
         </section>
 
