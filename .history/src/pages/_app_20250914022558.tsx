@@ -17,7 +17,6 @@ const MyApp: AppType = ({ Component, pageProps }) => {
     <div lang={"en"} className={dmSans.className}>
       <Component {...pageProps} />
       <SpeedInsights />
-      <Analytics />
     </div>
   );
 };
